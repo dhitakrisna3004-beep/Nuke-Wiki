@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Bom Nuklir Dunia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Nuke Wiki</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
   <div class="wiki-container">
-  <header class="wiki-header">
-    <h1>Daftar Bom Nuklir Utama dalam Sejarah</h1>
-    <p class="subtitle">Dari Proyek Manhattan hingga era Termonuklir Modern.</p>
-    <hr>
-  </header>
+    <header class="wiki-header">
+      <h1>Daftar Bom Nuklir Utama dalam Sejarah</h1>
+      <p class="subtitle">Arsip Komprehensif Senjata Fisi dan Termonuklir Global.</p>
+      <hr>
+    </header>
 
-  <main class="wiki-content">
-    <p>Ini adalah daftar komprehensif dari jenis, desain, dan uji coba bom nuklir paling signifikan yang pernah diciptakan di dunia. Gunakan fitur pencarian atau filter untuk menyaring data.</p>
-    
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Cari nama bom, negara, atau jenis...">
-      <select id="countryFilter">
-        <option value="all">Semua Negara</option>
-        <option value="AS">Amerika Serikat</option>
-        <option value="Uni Soviet">Uni Soviet</option>
-      </select>
-    </div>
-
-    <div class="bomb-grid" id="bombGrid">
+    <main class="wiki-content">
+      <p>Ini adalah daftar komprehensif dari jenis, desain, dan uji coba bom nuklir paling signifikan yang pernah diciptakan di dunia. Gunakan fitur pencarian atau opsi filter negara untuk menyaring data sejarah.</p>
+      
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Cari nama bom, teknologi, atau deskripsi...">
+        <select id="countryFilter">
+          <option value="all">Semua Negara</option>
+          <option value="AS">Amerika Serikat</option>
+          <option value="Uni Soviet">Uni Soviet</option>
+          <option value="Inggris">Inggris</option>
+          <option value="Prancis">Prancis</option>
+          <option value="Tiongkok">Tiongkok</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Korea Utara">Korea Utara</option>
+        </select>
       </div>
-  </main>
-  
-  <footer class="wiki-footer">
-    <hr>
-    <p>Konten dirangkum untuk tujuan edukasi dan sejarah. Data diperbarui secara berkala.</p>
-  </footer>
-</div>
-    <script  src="./script.js"></script>
 
-  </body>
-  
+      <div class="bomb-grid" id="bombGrid"></div>
+    </main>
+    
+    <footer class="wiki-footer">
+      <hr>
+      <p>Konten dirangkum untuk tujuan edukasi dan catatan sejarah dunia.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
