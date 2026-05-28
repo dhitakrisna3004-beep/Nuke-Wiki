@@ -1,4 +1,4 @@
-/* Reset & Font Global */
+/* Reset & Setelan Dasar */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 
-/* Container Utama */
+/* Kotak Pembungkus Ala Wikipedia */
 .wiki-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -24,7 +24,7 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Header */
+/* Gaya Tulisan Atas */
 .wiki-header h1 {
   font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
   font-weight: normal;
@@ -44,11 +44,12 @@ hr {
   margin: 15px 0;
 }
 
-/* Kontrol Cari & Filter */
+/* Baris Filter & Cari */
 .controls {
   display: flex;
   gap: 15px;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 #searchInput, #countryFilter {
@@ -60,14 +61,16 @@ hr {
 
 #searchInput {
   flex: 1;
+  min-width: 250px;
 }
 
 #countryFilter {
   width: 200px;
   background-color: #f8f9fa;
+  cursor: pointer;
 }
 
-/* Grid Komponen */
+/* Grid Layout Kartu */
 .bomb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -75,7 +78,7 @@ hr {
   margin-top: 20px;
 }
 
-/* Kartu Informasi Bom */
+/* Desain Kotak Kartu Bom */
 .bomb-card {
   border: 1px solid #c8ccd1;
   background: #f8f9fa;
@@ -108,6 +111,7 @@ hr {
   color: #54595d;
 }
 
+/* Tag Khusus Daya Ledak */
 .tag-yield {
   display: inline-block;
   background: #fee7e6;
@@ -117,7 +121,7 @@ hr {
   font-weight: bold;
 }
 
-/* Footer */
+/* Bagian Bawah */
 .wiki-footer {
   margin-top: 40px;
   font-size: 0.8rem;
